@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension group="user" method="upgrade" type="plugin" version="2.5">
+	<name>RokBridge User Synchronisation Plugin</name>
+    <creationDate>June 14, 2013</creationDate>
+   	<author>RocketTheme, LLC</author>
+   	<authorEmail>support@rockettheme.com</authorEmail>
+   	<authorUrl>http://www.rockettheme.com</authorUrl>
+   	<copyright>(C) 2005 - 2013 RocketTheme, LLC. All rights reserved.</copyright>
+   	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+   	<version>3.2</version>
+	<description>Handles phpBB3 user synchronisation</description>
+	<files>
+		<filename>en-GB.plg_user_phpbb3_user.sys.ini</filename>
+        <filename>en-GB.plg_user_phpbb3_user.ini</filename>
+        <filename plugin="phpbb3_user">phpbb3_user.php</filename>
+        <filename>index.html</filename>
+    </files>
+	<languages>
+    <language tag="en-GB">en-GB.plg_user_phpbb3_user.ini</language>
+    <language tag="en-GB">en-GB.plg_user_phpbb3_user.sys.ini</language>
+  </languages>
+ </extension>

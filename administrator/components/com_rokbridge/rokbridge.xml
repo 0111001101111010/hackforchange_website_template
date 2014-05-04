@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension method="upgrade" type="component" version="2.5.0">
+    <name>RokBridge</name>
+    <creationDate>June 14, 2013</creationDate>
+    <author>RocketTheme, LLC</author>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.rockettheme.com</authorUrl>
+    <copyright>(C) 2005 - 2013 RocketTheme, LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>3.2</version>
+    <description>RokBridge is a non-invasive, bi-directional bridge for Joomla and the forum platform phpBB3</description>
+
+    <files folder="site">
+        <folder>views</folder>
+        <filename>controller.php</filename>
+        <filename>rokbridge.php</filename>
+        <filename>index.html</filename>
+        <folder>models</folder>
+    </files>
+
+    <administration>
+        <menu img="components/com_rokbridge/assets/images/rokbridge-icon-16.png">COM_ROKBRIDGE</menu>
+        <files folder="admin">
+            <folder>forum</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>views</folder>
+            <filename>controller.php</filename>
+            <folder>language</folder>
+            <filename>rokbridge.php</filename>
+            <folder>controllers</folder>
+            <folder>phpbb</folder>
+            <filename>index.html</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <folder>models</folder>
+        </files>
+        <languages folder="admin/language/en-GB">
+            <language tag="en-GB">en-GB.com_rokbridge.ini</language>
+            <language tag="en-GB">en-GB.com_rokbridge.sys.ini</language>
+        </languages>
+    </administration>
+    <updateservers>
+        <server name="RocketTheme Update Directory" priority="1" type="collection">http://updates.rockettheme.com/joomla/updates.xml</server>
+    </updateservers>
+</extension>

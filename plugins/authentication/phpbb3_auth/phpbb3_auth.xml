@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension group="authentication" method="upgrade" type="plugin" version="2.5">
+    <name>RokBridge User Authentication Plugin</name>
+    <creationDate>June 14, 2013</creationDate>
+   	<author>RocketTheme, LLC</author>
+   	<authorEmail>support@rockettheme.com</authorEmail>
+   	<authorUrl>http://www.rockettheme.com</authorUrl>
+   	<copyright>(C) 2005 - 2013 RocketTheme, LLC. All rights reserved.</copyright>
+   	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+   	<version>3.2</version>
+	<description>A phpBB3 authentication plugin</description>
+  <files>
+    <filename>en-GB.plg_authentication_phpbb3_auth.sys.ini</filename>
+        <filename>index.html</filename>
+        <filename>en-GB.plg_authentication_phpbb3_auth.ini</filename>
+        <filename plugin="phpbb3_auth">phpbb3_auth.php</filename>
+    </files>
+	<languages>
+    <language tag="en-GB">en-GB.plg_authentication_phpbb3_auth.ini</language>
+    <language tag="en-GB">en-GB.plg_authentication_phpbb3_auth.sys.ini</language>
+  </languages>
+ </extension>

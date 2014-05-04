@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>*|MC:SUBJECT|*</title>
+        
+	    <style type="text/css">
+			img{
+				display:block;
+			}
+			#outlook a{
+				padding:0;
+			}
+			body{
+				width:100% !important;
+			}
+			body{
+				margin:0;
+				padding:0;
+			}
+			img{
+				border:none;
+				outline:none;
+				text-decoration:none;
+			}
+			body{
+				background-color:#FFFFFF;
+				background: url('http://hackforathens.org/templates/rt_chapelco/images/light/dots.jpg') repeat;
+			}
+			.shrink-text{
+				font-size: 11px;
+			}
+			#container{
+				height:100%;
+				margin:0;
+				padding:0;
+				width:100%;
+			}
+			#subcontainer{
+				
+			}
+			#templateHeader{
+				background-color:#EFEFEF;
+			}
+		/*
+		@tab Page
+		@section primary heading style
+		@tip Primary headings in your message body. Make them big and easy to read.
+		@theme title
+		*/
+			.title{
+				/*@editable*/color:#B2B2B2;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:26px;
+				/*@editable*/line-height:150%;
+				/*@editable*/font-weight:bold;
+			}
+		/*
+		@tab Page
+		@section secondary heading style
+		@tip Secondary headings in your message body. Make these smaller than your primary titles, but bigger than your content text.
+		@theme subtitle
+		*/
+			.subTitle{
+				/*@editable*/color:#B2B2B2;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:22px;
+				/*@editable*/line-height:150%;
+				/*@editable*/font-weight:bold;
+			}
+		/*
+		@tab Header
+		@section text style
+		@tip The styling for your email's header text. Make it a color and size that is easy to read.
+		*/
+			#emailHeading{
+				/*@editable*/color:#B2B2B2;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:30px;
+				/*@editable*/font-weight:bold;
+				/*@editable*/line-height:100%;
+			}
+		/*
+		@tab Header
+		@section link style
+		@tip The styling for your email's header hyperlinks. Make it a color that stands out from the rest of your text.
+		*/
+			#emailHeading a:link,#emailHeading a:visited{
+				/*@editable*/color:#B2B2B2;
+				/*@editable*/font-weight:bold;
+				/*@editable*/text-decoration:none;
+			}
+		/*
+		@tab Header
+		@section image alignment
+		@tip Set the alignment for your main event image.
+		*/
+			#headerImage{
+				/*@editable*/text-align:center;
+			}
+			#headerImage img{
+				display:inline;
+				max-width:600px;
+			}
+		/*
+		@tab Header
+		@section location text style
+		@tip The styling for your email's event location text. Make it a color and size that is easy to read.
+		*/
+			#location{
+				/*@editable*/color:#303030;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:16px;
+				/*@editable*/font-weight:bold;
+				/*@editable*/line-height:150%;
+			}
+		/*
+		@tab Body
+		@section text style
+		@tip The styling for your email's main content text. Make it a color and size that is easy to read.
+		*/
+			#templateCopy{
+				/*@editable*/color:#505050;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:13px;
+				/*@editable*/line-height:20px;
+				/*@editable*/font-weight:bold;
+				text-align: justify;
+			}
+		/*
+		@tab Body
+		@section link style
+		@tip The styling for your email's main content hyperlinks. Make it a color that stands out from the rest of your text.
+		*/
+			#templateCopy a:link,#templateCopy a:visited{
+				color: #356788;
+				font-weight: bold;
+				/*@editable*/text-decoration:underline;
+			}
+		/*
+		@tab Body
+		@section calendar month text style
+		@tip The styling for your email's calendar month text. Make it a color and size that is easy to read.
+		*/
+			#month{
+				/*@tab Body
+		@section calendar month text style
+		@tip The styling for your email's calendar month text. Make it a color and size that is easy to read.*/background-color:#EFEFEF;
+				/*@editable*/color:#303030;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:18px;
+				/*@editable*/font-weight:bold;
+				/*@editable*/line-height:150%;
+			}
+		/*
+		@tab Body
+		@section calendar day text style
+		@tip The styling for your email's calendar day text. Make it a color and size that is easy to read.
+		*/
+			#day{
+				/*@tab Body
+		@section calendar day text style
+		@tip The styling for your email's calendar day text. Make it a color and size that is easy to read.*/background-color:#FFFFFF;
+				/*@editable*/color:#303030;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:30px;
+				/*@editable*/font-weight:bold;
+				/*@editable*/line-height:100%;
+			}
+		/*
+		@tab Body
+		@section register button style
+		@tip The styling for your email's register button text. Make it stand out from the rest of your text.
+		*/
+			#button,#button a:link,#button a:visited{
+				/*@editable*/color:#FFFFFF;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:13px;
+				/*@editable*/font-weight:bold;
+				/*@editable*/line-height:150%;
+				/*@editable*/text-decoration:none;
+				display: block;
+			}
+
+			#button:hover{
+				background-color: #356788;
+			}
+		/*
+		@tab Body
+		@section social button text style
+		@tip The styling for your email's social button text. Make it a color and size that is easy to read.
+		*/
+			#social{
+				/*@editable*/color:#505050;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:11px;
+				/*@editable*/line-height:100%;
+			}
+		/*
+		@tab Body
+		@section social button link style
+		@tip The styling for your email's social button hyperlinks. Make it a color that stands out from the rest of your text.
+		*/
+			#social a:link,#social a:visited{
+				/*@editable*/color:#79110b;
+				/*@editable*/font-weight:bold;
+				/*@editable*/text-decoration:none;
+			}
+
+			#social a:hover{
+				color: #356788;
+			}
+		/*
+		@tab Footer
+		@section text style
+		@tip The styling for your email's footer text. Make it a color and size that is easy to read.
+		*/
+			#templateFooter{
+				/*@tab Footer
+		@section text style
+		@tip The styling for your email's footer text. Make it a color and size that is easy to read.*/
+				/*@editable*/color:#505050;
+				/*@editable*/font-family:Helvetica;
+				/*@editable*/font-size:11px;
+				/*@editable*/line-height:150%;
+				/*@editable*/text-align:center;
+			}
+		/*
+		@tab Footer
+		@section link style
+		@tip The styling for your email's footer hyperlinks. Make it a color that stands out from the rest of your text.
+		*/
+			#templateFooter a:link,#templateFooter a:visited{
+				/*@editable*/color:#79110b;
+				/*@editable*/font-weight:bold;
+				/*@editable*/text-decoration:none;
+			}
+
+			.divider{
+				background: url('http://hackforathens.org/templates/rt_chapelco/images/light/page-divider.png') 50% 50% no-repeat;
+				background-size: 140%;
+				height: 10px;
+			}
+
+			.bluetext{
+				color: #356788;
+			}
+
+			.padding-right{
+				padding-right: 40px;
+			}
+
+			.push-down{
+				padding-top: 30px;
+			}
+
+			#templateCopy h2{
+				text-align: center;
+				font-size: 2em;
+			}
+
+
+			.points{
+				margin: 1em 2.5em 1em 2.5em;
+				min-height: 50px;
+			}
+
+			.points span.point{
+				color: #356788;
+				font-size: 24px;
+				font-weight: bold;
+				
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				background: rgba(121, 17, 11, 0.1);
+				float: left;
+				margin-right: 1em;
+				margin-bottom: 10px;
+				padding: 2px 5px;
+				background-color: #79110b;
+				background-image: -webkit-gradient(linear,0 0,0 100%,from(#8a150e),color-stop(45%,#78120c),to(#7c0e08));
+				background-image: -webkit-linear-gradient(#8a150e,#78120c 45%,#7c0e08);
+				background-image: -moz-linear-gradient(top,#8a150e,#78120c 45%,#7c0e08);
+				background-image: -o-linear-gradient(#8a150e,#78120c 45%,#7c0e08);
+				background-image: linear-gradient(#8a150e,#78120c 45%,#7c0e08);
+				background-repeat: no-repeat;
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a140d', endColorstr='#ff7b0e08', GradientType=0);
+				-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+				-moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+				box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+				color: #ffffff;
+				text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+			}
+
+			.points #templateCopy{
+				font-size: 14px;
+			}
+		</style>
+	</head>
+    <body>
+    	<center>
+        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="container">
+            	<tr>
+                	<td align="center" valign="top">
+                    	<table border="0" cellpadding="0" cellspacing="0" width="600" id="subcontainer">
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+                                        <tr>
+                                            <td colspan="7" valign="top" id="headerImage">
+                                                <a href="http://hackforathens.org" target="_blank"><img src="http://hackforathens.org/images/hackforathens-large-web.png" style="max-width:600px; position: relative; left: 45px;" id="campaign-icon" mc:edit="main_image"></a>
+                                            </td>
+                                        </tr>
+                                        <tr><td colspan="7" class="divider"></td></tr>
+                                        <tr>
+                                        	<td align="left" valign="middle" width="15">
+                                                <br>
+                                            </td>
+                                            <td width="35">
+                                                <br>
+                                            </td>
+                                            <td colspan="3" id="templateCopy">
+                                        		<h2 class="bluetext">[NEWSLETTER TITLE]</h2>
+                                        	</td>
+                                        	<td colspan="2" width="50">
+                                            	<br>
+                                            </td>
+                                        </tr>
+                                        <tr><td colspan="7">
+                                        	<div class="points">
+                                        		<span class="point">1</span>
+                                        		<p id="templateCopy"><a href="http://hackforathens.org/register" target="_blank">Register for the event</a> so we know you're coming. </p>
+                                        	</div>
+
+                                        	<div class="points">
+                                        		<span class="point">2</span>
+                                        		<p id="templateCopy">The event will be at [LOCATION]. Parking is [PARKING INFORMATION]. Need directions? Then use the map below or the directions <a href="http://www.cviog.uga.edu/contact/chicopee">found here!</a></p>
+                                        		<iframe style="position:relative; left: 10px;" width="600" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1180+e+broad+street+athens+ga&amp;aq=&amp;sll=32.678125,-83.178297&amp;sspn=7.77328,14.27124&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=1180+E+Broad+St,+Athens,+Clarke,+Georgia+30601&amp;z=17&amp;ll=33.958043,-83.364322&amp;output=embed"></iframe>
+                                        	</div>
+
+                                        	<div class="points">
+                                        		<span class="point">3</span>
+                                        		<p id="templateCopy"><a href="http://hackforathens.org/about/schedule" target="_blank">Doors open at [START DATES AND TIME]</a></p>
+                                        	</div>
+
+                                        	<div class="points">
+                                        		<span class="point">4</span>
+                                        		<p id="templateCopy">Familiarize yourself with <a href="http://hackforathens.org/get-involved/challenges/view-challenges" target="_blank">the challenges</a>, <a href="http://hackforathens.org/get-involved/datasets/view-datasets" target="_blank">the datasets</a>, and <a href="http://hackforathens.org/about/resources" target="_blank">the resources</a>.</p>
+                                        	</div>
+
+                                        	<div class="points">
+                                        		<span class="point">5</span>
+                                        		<p id="templateCopy"><a href="http://hackforathens.org/get-involved/teams/create-team" target="_blank">Form your teams and get started early</a> if you'd like to get the jump on the <a href="http://hackforathens.org/about/pitch-contest" target="_blank">awesome pitch contest</a> the night of [DATE AND TIME OF PITCH CONTEST IF APPLICABLE]</p>
+                                        	</div>
+
+                                        	<div class="points">
+                                        		<span class="point">6</span>
+                                        		<p id="templateCopy">Don't forget to bring your equipment if you need it, such as laptops, power cords, tablets and phones, power strips, and paper and writing utensils</p>
+                                        	</div>
+
+                                        	
+
+                                        </td></tr>
+                                       
+                                        <tr><td colspan="7" class="push-down divider"></td></tr>
+                                        <tr>
+                                            <td colspan="7">
+	                                            <table border="0" cellpadding="0" cellspacing="0">
+	                                            	<tr>
+	                                            		<td colspan="2" width="55">
+			                                                <br>
+			                                            </td>
+			                                            <td align="left" valign="top" width="415" id="templateCopy">
+			                                            	<br>
+			                                                <div style="margin: 2em;" mc:edit="main">
+			                                                    <span class="bluetext">On the weekend of May 31st, 2014</span>, web and software developers, designers, community organizers, and other folks from all over [YOUR CITY] will gather at <span class="bluetext">[YOUR LOCATION]</span>, to tackle local challenges with technology.
+			                                             
+			                                                </div>
+			                                            </td>
+			                                            <td width="15">
+			                                            	<br>
+			                                            </td>
+			                                            <td colspan="3" align="right" valign="top" width="150">
+			                                            	<br>
+			                                                <table bgcolor="#FFFFFF" border="0" cellpadding="5" cellspacing="5" width="150" id="calendar">
+			                                                	<tr>
+			                                                    	<td align="center" bgcolor="#EFEFEF" valign="top" id="month">
+			                                                        	<div mc:edit="month">
+			                                                            	May/June
+			                                                            </div>
+			                                                        </td>
+			                                                    </tr>
+			                                                    <tr>
+			                                                    	<td align="center" valign="top" id="day">
+			                                                        	<div mc:edit="day">
+			                                                            	31st-1st
+			                                                            </div>
+			                                                        </td>
+			                                                    </tr>
+			                                                    <tr>
+			                                                </tr></table>
+			                                                <table bgcolor="#FFFFFF" border="0" cellpadding="5" cellspacing="5" width="150">
+			                                                	<tr>
+			                                                    	<td align="center" bgcolor="#79110b" valign="middle" id="button">
+			                                                        	<div mc:edit="button">
+			                                                            	<a href="http://hackforathens.org/register" target="_blank">REGISTER NOW</a>
+			                                                            </div>
+			                                                        </td>
+			                                                    </tr>
+			                                                </table>
+			                                            </td>
+			                                        </tr>
+			                                    </table>
+		                                    </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td align="left" valign="middle" width="15">
+                                                <br>
+                                            </td>
+                                            <td width="35">
+                                                <br>
+                                            </td>
+                                            <td align="center" colspan="3" width="500">
+                                            	<br>
+                                                <table border="0" cellpadding="2" cellspacing="0" id="social">
+                                                	<tr>
+                                                    	<td align="center" bgcolor="#FFFFFF" valign="middle" width="150">
+                                                        	<table border="0" cellpadding="0" cellspacing="0">
+                                                            	<tr>
+                                                                    <td align="center" bgcolor="#FFFFFF" valign="middle" width="48">
+                                                                        <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_twitter.6.gif">
+                                                                    </td>
+                                                                    <td bgcolor="#EFEFEF" width="10">
+                                                                    	<br>
+                                                                    </td>
+                                                                    <td align="left" bgcolor="#EFEFEF" valign="middle" width="78">
+                                                                    	<br>
+                                                                        <div mc:edit="social_link_one">
+                                                                            <a class="shrink-text" href="https://twitter.com/hackforathens" target="_blank">FOLLOW ON</a><br><strong class="shrink-text">TWITTER</strong>
+                                                                        </div>
+                                                                        <br>
+                                                                    </td>
+                                                                    <td bgcolor="#EFEFEF" width="10">
+                                                                    	<br>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td width="24">
+                                                        	<br>
+                                                        </td>
+                                                    	<td align="center" bgcolor="#FFFFFF" valign="middle" width="150">
+                                                        	<table border="0" cellpadding="0" cellspacing="0">
+                                                            	<tr>
+                                                                    <td align="center" bgcolor="#FFFFFF" valign="middle" width="48">
+                                                                        <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_facebook.6.gif">
+                                                                    </td>
+                                                                    <td bgcolor="#EFEFEF" width="10">
+                                                                    	<br>
+                                                                    </td>
+                                                                    <td align="left" bgcolor="#EFEFEF" valign="middle" width="78">
+                                                                    	<br>
+                                                                        <div mc:edit="social_link_two">
+                                                                            <a class="shrink-text" href="https://www.facebook.com/HackForAthens" target="_blank">FRIEND ON</a><br><strong class="shrink-text">FACEBOOK</strong>
+                                                                        </div>
+                                                                        <br>
+                                                                    </td>
+                                                                    <td bgcolor="#EFEFEF" width="10">
+                                                                    	<br>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td width="24">
+                                                        	<br>
+                                                        </td>
+                                                    	<td align="center" bgcolor="#FFFFFF" valign="middle" width="150">
+                                                        	<table border="0" cellpadding="0" cellspacing="0">
+                                                            	<tr>
+                                                                    <td align="center" bgcolor="#FFFFFF" valign="middle" width="48">
+                                                                        <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_forward.6.gif">
+                                                                    </td>
+                                                                    <td bgcolor="#EFEFEF" width="10">
+                                                                    	<br>
+                                                                    </td>
+                                                                    <td align="left" bgcolor="#EFEFEF" valign="middle" width="78">
+                                                                    	<br>
+                                                                        <div mc:edit="social_link_three">
+                                                                            <a href="*|FORWARD|*" target="_blank" class="shrink-text">FORWARD TO</a><br><strong class="shrink-text">A FRIEND</strong>
+                                                                        </div>
+                                                                        <br>
+                                                                    </td>
+                                                                    <td bgcolor="#EFEFEF" width="10">
+                                                                    	<br>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <br>
+                                            </td>
+                                            <td colspan="2" width="50">
+                                            	<br>
+                                            </td>
+                                        </tr>
+                                        <tr><td colspan="7" class="divider"></td></tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">                            
+                                    <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateFooter">
+                                        <tr>
+                                        	<td width="50">
+                                            	<br>
+                                            </td>
+                                            <td valign="top" width="500">
+                                            	<br>
+                                                <div mc:edit="footer">
+                                                	Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|* All rights reserved.
+                                                    <br>
+                                                    <br>
+                                                	*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|* *|END:IF|*
+                                                    <br>
+                                                    <a href="*|UNSUB|*" target="_blank">Unsubscribe</a> <span style="color:#FFFFFF;">&bull;</span> <a href="*|UPDATE_PROFILE|*" target="_blank">Update subscription preferences</a>
+                                                    <br>
+                                                    <br>
+                                                    *|IFNOT:ARCHIVE_PAGE|* *|LIST:ADDRESS|* *|END:IF|*
+                                                    <br>
+                                                    <br>
+                                                    *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+                                                </div>
+                                                <br>
+                                            </td>
+                                            <td width="50">
+                                            	<br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </center>
+    </body>
+</html>

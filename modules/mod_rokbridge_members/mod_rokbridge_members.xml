@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension client="site" method="upgrade" type="module" version="2.5">
+    <name>RokBridge Members</name>
+    <creationDate>June 14, 2013</creationDate>
+    <author>RocketTheme, LLC</author>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.rockettheme.com</authorUrl>
+    <copyright>(C) 2005 - 2013 RocketTheme, LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>3.2</version>
+    <description>MOD_ROKBRIDGE_MEMBERS_XML_DESCRIPTION</description>
+    <files>
+        <folder>assets</folder>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <filename module="mod_rokbridge_members">mod_rokbridge_members.php</filename>
+        <filename>en-GB.mod_rokbridge_members.ini</filename>
+        <filename>en-GB.mod_rokbridge_members.sys.ini</filename>
+        <filename>helper.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_rokbridge_members.ini</language>
+        <language tag="en-GB">en-GB.mod_rokbridge_members.sys.ini</language>
+    </languages>
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_ROKBRIDGE_MEMBERS"/>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field default="1" description="ROKBRIDGE_MODULEMODE_DESC" label="ROKBRIDGE_MODULEMODE_LABEL" name="modulemode" type="list">
+                    <option value="latest">ROKBRIDGE_MODE_LATEST</option>
+                    <option value="top">ROKBRIDGE_MODE_TOP</option>
+                    <option value="online">ROKBRIDGE_MODE_ONLINE</option>
+                </field>
+                <field default="20" description="ROKBRIDGE_NUMBEROFMEMBERS_DESC" label="ROKBRIDGE_NUMBEROFMEMBERS_LABEL" name="limit" size="5" type="text"/>
+                <field default="d/m/Y G:i" description="ROKBRIDGE_DATEFORMAT_DESC" label="ROKBRIDGE_DATEFORMAT_LABEL" name="formatdate" type="list">
+                    <option value="d/m/Y G:i">22/10/2008 12:30</option>
+                    <option value="m/d/Y G:i">10/22/2008 12:30</option>
+                    <option value="d/m/Y">22/10/2008</option>
+                    <option value="m/d/Y">10/22/2008</option>
+                    <option value="d F Y G:i">22 October 2008 12:30</option>
+                    <option value="B d, Y G:i">October 22, 2008 12:30</option>
+                    <option value="d M. Y G:i">22 Oct. 2008 12:30</option>
+                    <option value="M. d, Y G:i">Oct. 22, 2008 12:30</option>
+                </field>
+                <field default="0" description="ROKBRIDGE_SHOWEXTRA_DESC" label="ROKBRIDGE_SHOWEXTRA_LABEL" name="showextra" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="1" description="ROKBRIDGE_SHOWAVATAR_DESC" label="ROKBRIDGE_SHOWAVATAR_LABEL" name="showavatar" type="list">
+                    <option value="0">ROKBRIDGE_USERNAME</option>
+                    <option value="1">ROKBRIDGE_AVATAR</option>
+                    <option value="2">ROKBRIDGE_AVATAR_USERNAME</option>
+                </field>
+                <field default="32" description="ROKBRIDGE_AVATAR_SIZE_DESC" label="ROKBRIDGE_AVATAR_SIZE_LABEL" name="avatar_size" size="3" type="text"/>
+                <field default="modules/mod_rokbridge_members/assets/default-avatar.png" description="ROKBRIDGE_DEFAULT_AVATAR_DESC" label="ROKBRIDGE_DEFAULT_AVATAR_LABEL" name="default_avatar" size="50" type="text"/>
+                <field default="1" description="ROKBRIDGE_SHOWPROFILE_DESC" label="ROKBRIDGE_SHOWPROFILE_LABEL" name="showprofilelink" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="_top" description="ROKBRIDGE_PROFTARGET_WINDOW_DESC" label="ROKBRIDGE_PROFTARGET_WINDOW_LABEL" name="profiletargetwin" type="list">
+                    <option value="_top">_top</option>
+                    <option value="_blank">_blank</option>
+                    <option value="_parent">_parent</option>
+                    <option value="_self">_self</option>
+                </field>
+                <field default="5" description="ROKBRIDGE_ONLINETIME_DESC" label="ROKBRIDGE_ONLINETIME_LABEL" name="onlinetime" size="5" type="text"/>
+                <field default="1" description="ROKBRIDGE_SHOWONLINE_DESC" label="ROKBRIDGE_SHOWONLINE_LABEL" name="showonlinecount" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" name="moduleclass_sfx" type="text"/>
+
+                <field default="1" description="COM_MODULES_FIELD_CACHING_DESC" label="COM_MODULES_FIELD_CACHING_LABEL" name="cache" type="list">
+                    <option value="1">JGLOBAL_USE_GLOBAL
+                    </option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+                    </option>
+                </field>
+
+                <field default="900" description="COM_MODULES_FIELD_CACHE_TIME_DESC" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" name="cache_time" type="text"/>
+                <field default="static" name="cachemode" type="hidden">
+                    <option value="static"/>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,314 @@
+#login-form{
+	margin-top: -30px;
+}
+
+#login-form .userdata p{
+	margin-bottom: 5px;
+}
+
+#login-form .userdata p label{
+	width: 35%;
+	min-width: 100px;
+	max-width: 125px;
+	display: inline-table;
+}
+
+#login-form .userdata p input{
+	width: 60%;
+	display: inline-table;
+}
+
+#login-form #modlgn-remember{
+	width: 20px;
+}
+
+#login-form ul li{
+	display: inline-table;
+	width: auto;
+	margin-right: 10px;
+}
+
+#interfacecontainerdiv{
+	position: absolute;
+	top: -10px;
+	right: 25px;
+}
+
+
+#rt-logo a{
+	width: 230px;
+}
+
+.component-content .login + div ul li a:before, #login-form a:before{
+	content: none;
+}
+
+.fp-roksprocket-features .layout-showcase .sprocket-features-container{
+	height: 300px;
+}
+
+.fp-roksprocket-features .layout-showcase .sprocket-features-img-container{
+	left: 0;
+	right: inherit;
+}
+
+.fp-roksprocket-features .layout-showcase .sprocket-features-img-container img{
+	height: 300px;
+}
+.fp-roksprocket-features .layout-showcase .sprocket-features-content{
+	position: absolute;
+	right: 3%;
+	width: 50%;
+}
+
+.sprocket-features-content .homepage-block{
+	margin: 50px 0 0 20px;
+	padding: 0 0 0 50px;
+}
+
+.sprocket-features-content .homepage-block h4.feature-promo2{
+	padding-right: 10px;
+	text-align: right;
+	padding-left: 0;
+}
+
+.sprocket-features-content .homepage-block h4.feature-promo2 span{
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.sprocket-features-content .homepage-block a.readon{
+	padding: 10px;
+	font-size: 2em;
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.sprocket-features-content .homepage-block a.readon:before{
+	content: none;
+}
+
+.homepage-intro-image{
+	width: 40%;
+	vertical-align: text-top;
+	display: inline-table;
+}
+
+.homepage-intro-text{
+	font-size: 1.2em;
+	padding: 0 2% 20px 2%;
+	line-height: 1.3em;
+	margin-top: -20px;
+	color: #555;
+	text-align: justify;
+	vertical-align: text-top;
+	display: inline-table;
+	width: 55%;
+}
+
+.homepage-target{
+	width: 90%;
+	margin: 10px 5%;
+}
+
+.fp-maintop.rt-block{
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+
+.fix-padding{
+	margin: -20px 0 10px 0;
+	padding: 10px 0;
+}
+
+.article-h4{
+	text-align: center;
+	padding: 5px;
+	line-height: 1.8em;
+}
+
+#jf-login-search{
+	display: none;
+}
+
+
+.ccms_form_element > label{
+	width: 30%;
+	padding-right: 2%;
+	text-align: right;
+}
+
+.ccms_form_element > input,
+.ccms_form_element > textarea,
+.ccms_form_element > select,
+.ccms_form_element > span > table{
+	width: 64% !important;
+}
+.ccms_form_element > input[type="submit"]{
+	width: 100% !important;
+	background-color: #356788;
+	color: white;
+}
+
+.ccms_form_element > input[type="submit"]:hover{
+	background-color: gray;
+}
+
+.space-items dd{
+	margin-bottom: 5px;
+}
+
+.sponsor-levels{
+	font-size: 12px;
+}
+
+.sponsor-levels table{
+	width: 100%;
+}
+
+.sponsor-levels table tr td:first-child{
+	width: 40%;
+	padding: 5px 0;
+}
+
+.sponsor-levels .sponsor-table-header{
+	text-align: center;
+	font-weight: bold;
+}
+
+.sponsor-levels span.icon-check{
+	display: block;
+	text-align: center;
+	color: green;
+	font-size: 16px;
+}
+
+.sponsor-levels tr:not(:first-child){
+	border-bottom: 1px solid #CCC;
+}
+
+/* Contact Form */
+
+#rt-main .component-content .contact .shrink-for-contact{ font-size: 1.75em; text-align: center; }
+#rt-main .component-content .contact .contact-contactinfo{ text-align:center;}
+#rt-main .component-content .contact .contact-contactinfo p{ display: inline; margin: 0 .5em;}
+#rt-main .component-content .contact #contact-form{ margin-bottom: 2em; }
+#rt-main .component-content .contact #contact-form dt{ margin-left: 5em; }
+#rt-main .component-content .contact #contact-form dt label{ float:right; margin-right: 1em;}
+#rt-main .component-content .contact #contact-form dd{ width: 60%; }
+#rt-main .component-content .contact #contact-form dd input,
+#rt-main .component-content .contact #contact-form dd textarea{ border: 1px solid #CCC; width: 100%; }
+#rt-main .component-content .contact #contact-form dd > div{ text-align: right; }
+#rt-main .component-content .contact #contact-form dd > div > label{ background-image: none; padding: 3px 0; }
+#rt-main .component-content .contact #contact-form dd .readon{ position: absolute; right: 0; }
+
+@media only screen and (min-width: 960px) and (max-width: 1199px){
+	body .fp-roksprocket-features .layout-showcase .sprocket-features-img-container img{
+		width: 500px;
+		height: 227px;
+		margin: 30px 0 0 0;
+	}
+
+	body .fp-roksprocket-features .layout-showcase .sprocket-features-container{
+		height: 275px;
+	}
+
+}
+
+
+/* Chronoforms */
+
+.ccms_form_element{
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	background: rgba(255,255,255,0.75);
+	padding: 10px;
+}
+
+.ccms_form_element .pane-sliders .panel{
+	margin: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+/* Datatables */
+.dataTables_wrapper{
+	font-family: Arial,Helvetica,sans-serif;
+	border: 1px solid #CCC;
+}
+.dataTables_wrapper a{
+	font-weight: bold;
+}
+
+/* Pages */
+.gantry-example{
+	padding: 15px;
+}
+
+.gantry-example:after{
+	content: none;
+}
+
+.gantry-example h2{
+	border-bottom: 1px solid #CCC;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+div.sponsorship{
+	display: inline-table;
+	width: 27%;
+	margin: 1%;
+}
+
+dl.large-dt dt{
+	min-width: 280px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+dl.large-dt dd{
+	margin-left: 290px;
+	margin-bottom: 5px;
+}
+
+dl.small-dt dt{
+	max-width: 75px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+dl.small-dt dd{
+	margin-left: 85px;
+	margin-bottom: 5px;
+}
+
+table.white{
+	background-color: white;
+}
+
+table.white thead tr th:first-child{
+	width: 150px;
+}
+
+table.white thead th{
+	font-weight: bold;
+	min-width: 150px;
+}
+
+table.white tbody tr td:first-child,
+table.white tbody tr td:nth-child(2),
+table.white tbody tr td:nth-child(3){
+	font-weight: bold;
+}
+
+table.white tbody tr td:nth-child(2){
+	text-align: right;
+	color: #005580;
+}
+
+.mainpagemodule .module-title h2{
+
+}

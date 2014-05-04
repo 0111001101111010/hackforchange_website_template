@@ -1,0 +1,39 @@
+#Kunena ul.menu li:before{
+	content: none;
+}
+
+#Kunena div.kpbox{
+	display: none;
+}
+
+body #Kunena #ktab ul.menu li.active a{
+	background: none !important;
+	
+}
+
+body #Kunena #ktab ul.menu li.active a span{
+	color: white;
+}
+
+body #Kunena div.kblock > div.kheader, 
+body #Kunena .kblock div.kheader,
+body #Kunena #ktab ul.menu li.active a, 
+body #Kunena #ktab li#current.selected a,
+body #Kunena #ktop span.ktoggler,
+body #Kunena a:active{
+	opacity: 0.9;
+	color: #ffffff;
+	background-color: #376b8e !important;
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#24465c),color-stop(35%,#356788),to(#407da5));
+	background-image: -webkit-linear-gradient(#24465c,#356788 35%,#407da5);
+	background-image: -moz-linear-gradient(top,#24465c,#356788 35%,#407da5);
+	background-image: -o-linear-gradient(#24465c,#356788 35%,#407da5);
+	background-image: linear-gradient(#24465c,#356788 35%,#407da5);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff23455b', endColorstr='#ff407da5', GradientType=0);
+	border: 1px solid #203d51;
+	border-bottom: none;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1), inset 0 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1), inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.1), inset 0 1px 1px rgba(0,0,0,0.1);
+}

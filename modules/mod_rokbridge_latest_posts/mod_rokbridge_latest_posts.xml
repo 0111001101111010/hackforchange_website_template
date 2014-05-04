@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension client="site" method="upgrade" type="module" version="2.5">
+    <name>RokBridge Latest Posts</name>
+    <creationDate>June 14, 2013</creationDate>
+    <author>RocketTheme, LLC</author>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.rockettheme.com</authorUrl>
+    <copyright>(C) 2005 - 2013 RocketTheme, LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>3.2</version>
+    <description>MOD_ROKBRIDGE_LATEST_POSTS_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_rokbridge_latest_posts">mod_rokbridge_latest_posts.php</filename>
+        <folder>fields</folder>
+        <filename>en-GB.mod_rokbridge_latest_posts.ini</filename>
+        <filename>en-GB.mod_rokbridge_latest_posts.sys.ini</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_rokbridge_latest_posts.ini</language>
+        <language tag="en-GB">en-GB.mod_rokbridge_latest_posts.sys.ini</language>
+    </languages>
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_ROKBRIDGE_LATEST_POSTS"/>
+    <config>
+        <fields name="params">
+            <fieldset addfieldpath="/modules/mod_rokbridge_latest_posts/fields" name="basic">
+                <field default="" description="ROKBRIDGE_FORUMINCLUDE_DESC" label="ROKBRIDGE_FORUMINCLUDE_LABEL" multiple="multiple" name="forumincl" size="5" type="forums"/>
+                <field default="" description="ROKBRIDGE_FORUMEXCLUDE_DESC" label="ROKBRIDGE_FORUMEXCLUDE_LABEL" multiple="multiple" name="forumexcl" size="5" type="forums"/>
+                <field default="5" description="ROKBRIDGE_NUMBEROFPOSTS_DESC" label="ROKBRIDGE_NUMBEROFPOSTS_LABEL" name="limit" type="text"/>
+                <field default="d/m/Y G:i" description="ROKBRIDGE_DATEFORMAT_DESC" label="ROKBRIDGE_DATEFORMAT_LABEL" name="formatdate" type="list">
+                    description="ROKBRIDGE_DATEFORMAT_DESC"&gt;
+                    <option value="d/m/Y G:i">22/10/2008 12:30</option>
+                    <option value="m/d/Y G:i">10/22/2008 12:30</option>
+                    <option value="d/m/Y">22/10/2008</option>
+                    <option value="m/d/Y">10/22/2008</option>
+                    <option value="d F Y G:i">22 October 2008 12:30</option>
+                    <option value="B d, Y G:i">October 22, 2008 12:30</option>
+                    <option value="d M. Y G:i">22 Oct. 2008 12:30</option>
+                    <option value="M. d, Y G:i">Oct. 22, 2008 12:30</option>
+                </field>
+                <field default="0" description="ROKBRIDGE_ACTIVECREATED_DESC" label="ROKBRIDGE_ACTIVECREATED_LABEL" name="showcreated" type="radio">
+                    <option value="0">ROKBRIDGE_SHOWACTIVE</option>
+                    <option value="1">ROKBRIDGE_SHOWCREATED</option>
+                </field>
+                <field default="0" description="ROKBRIDGE_DIRECTPOST_DESC" label="ROKBRIDGE_DIRECTPOST_LABEL" name="directpost" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="1" description="ROKBRIDGE_SHOWRE_DESC" label="ROKBRIDGE_SHOWRE_LABEL" name="showre" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="_top" description="ROKBRIDGE_POSTTARGET_WINDOW_DESC" label="ROKBRIDGE_POSTTARGET_WINDOW_LABEL" name="posttargetwin" type="list">
+                    <option value="_top">_top</option>
+                    <option value="_blank">_blank</option>
+                    <option value="_parent">_parent</option>
+                    <option value="_self">_self</option>
+                </field>
+                <field default="0" description="ROKBRIDGE_SHOWPROFILE_DESC" label="ROKBRIDGE_SHOWPROFILE_LABEL" name="showprofilelink" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="_top" description="ROKBRIDGE_PROFTARGET_WINDOW_DESC" label="ROKBRIDGE_PROFTARGET_WINDOW_LABEL" name="profiletargetwin" type="list">
+                    <option value="_top">_top</option>
+                    <option value="_blank">_blank</option>
+                    <option value="_parent">_parent</option>
+                    <option value="_self">_self</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" name="moduleclass_sfx" type="text"/>
+
+                <field default="1" description="COM_MODULES_FIELD_CACHING_DESC" label="COM_MODULES_FIELD_CACHING_LABEL" name="cache" type="list">
+                    <option value="1">JGLOBAL_USE_GLOBAL
+                    </option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+                    </option>
+                </field>
+
+                <field default="900" description="COM_MODULES_FIELD_CACHE_TIME_DESC" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" name="cache_time" type="text"/>
+                <field default="static" name="cachemode" type="hidden">
+                    <option value="static"/>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

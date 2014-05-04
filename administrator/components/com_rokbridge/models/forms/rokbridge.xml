@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fieldset>
+       <field 
+       		name="bridge_path" 
+       		type="text"
+       		label="COM_ROKBRIDGE_ROOT_BRIDGE_LABEL"
+       		description="COM_ROKBRIDGE_ROOT_BRIDGE_DESC"
+       		required="true"
+       		default="forum"
+       		filter="raw"
+       		size="40" /> 
+       <field
+	   		name="phpbb3_path" type="text"
+            label="COM_ROKBRIDGE_PHPBB3_PATH_LABEL"
+	    	description="COM_ROKBRIDGE_PHPBB3_PATH_DESC" 
+            required="true" 
+            default="distribution"
+            filter="raw"
+            size="40" /> 
+       <field 
+	   		name="sef_enable" type="radio"                        
+            label="COM_ROKBRIDGE_SEF_LABEL"
+	    	description="COM_ROKBRIDGE_SEF_DESC"
+            default="0"
+            filter="raw">
+		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+        </field> 
+       <field 
+	   		name="sef_rewrite" type="radio"                       
+            label="COM_ROKBRIDGE_SEF_REWRITE_LABEL"
+	    	description="COM_ROKBRIDGE_SEF_REWRITE_DESC"
+            default="0"
+            filter="raw">
+		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+        </field>
+       <field
+	   		name="force_remember" type="radio"                        
+            label="COM_ROKBRIDGE_FORCE_REMEMBER_LABEL"
+	    	description="COM_ROKBRIDGE_FORCE_REMEMBER_DESC"
+            default="0"
+            filter="raw">
+		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+        </field> 
+       <field
+	   		name="link_format" type="list"
+            label="COM_ROKBRIDGE_LINK_FORMAT_LABEL"
+			description="COM_ROKBRIDGE_LINK_FORMAT_DESC"
+            default="bridged"
+            filter="raw"
+            multiple="false">
+		<option value="bridged">COM_ROKBRIDGE_LINK_FORMAT_OPTION_BRIDGED</option>
+		<option value="synced">COM_ROKBRIDGE_LINK_FORMAT_OPTION_SYNCHED</option>
+        </field>
+</fieldset>
+<fieldset name="advanced" label="COM_ROKBRIDGE_ADVANCED_OPTIONS"> 
+       <field
+	   		name="create_user_asynchroneously" type="customradio"
+            label="COM_ROKBRIDGE_CREATE_AS_LABEL" 
+	    	description="COM_ROKBRIDGE_CREATE_AS_DESC"
+            default="1"
+            filter="raw"
+			addfieldpath="/administrator/components/com_rokbridge/models/fields">
+			>
+		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+        </field>
+       <field
+	   		name="create_user_immediately" type="customradio"
+            label="COM_ROKBRIDGE_CREATE_IM_LABEL" 
+	    	description="COM_ROKBRIDGE_CREATE_IM_DESC"
+            default="0"
+            filter="raw"
+			addfieldpath="/administrator/components/com_rokbridge/models/fields">
+		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+        </field> 
+       <field
+	   		name="user_inactive" type="radio"
+            label="COM_ROKBRIDGE_SET_INACTIVE_LABEL"
+	    	description="COM_ROKBRIDGE_SET_INACTIVE_DESC"
+            default="0"
+            filter="raw">
+		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+        </field> 
+       <field
+	   		name="group_id" type="list"
+            label="COM_ROKBRIDGE_PHPBB3_USERGROUP_LABEL" 
+	    	description="COM_ROKBRIDGE_PHPBB3_USERGROUP_DESC"
+            default="2"
+            filter="raw"
+            multiple="false">
+		<option value="2">REGISTERED</option>
+		<option value="3">REGISTERED_COPPA</option>
+		<option value="4">GLOBAL_MODERATORS</option>
+		<option value="5">ADMINISTRATORS</option>
+		<option value="6">BOTS</option>
+		<option value="7">NEWLY_REGISTERED</option>
+        </field> 
+       <field
+	   		name="user_new" type="radio"
+            label="COM_ROKBRIDGE_PHPBB3_USERGROUP_NEWLY_LABEL" 
+	    	description="COM_ROKBRIDGE_PHPBB3_USERGROUP_NEWLY_DESC"
+            default="0"
+            filter="raw">
+		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+        </field> 
+       <field
+	   		name="user_delete_mode" type="list"
+            label="COM_ROKBRIDGE_PHPBB3_USER_DEL_MODE_LABEL"
+	    	description="COM_ROKBRIDGE_PHPBB3_USER_DEL_MODE_DESC" 
+            default="retain"
+            filter="raw">
+        <option value="retain">COM_ROKBRIDGE_PHPBB3_USER_DEL_MODE_RETAIN</option>
+		<option value="remove">COM_ROKBRIDGE_PHPBB3_USER_DEL_MODE_REMOVE</option>
+        </field> 
+       <field
+	   		name="save_poster_username" type="radio"
+            label="COM_ROKBRIDGE_USER_RETAIN_UNAME_LABEL"
+	    	description="COM_ROKBRIDGE_USER_RETAIN_UNAME_DESC"
+            default="1"
+            filter="raw">
+		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+        </field>
+			<field name="checked_out" type="hidden" filter="unset" />
+            <field name="checked_out_time" type="hidden" filter="unset" />
+	</fieldset>
+</form>

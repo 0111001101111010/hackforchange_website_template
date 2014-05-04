@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension client="site" method="upgrade" type="module" version="2.5">
+    <name>RokBridge Login</name>
+    <creationDate>June 14, 2013</creationDate>
+    <author>RocketTheme, LLC</author>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.rockettheme.com</authorUrl>
+    <copyright>(C) 2005 - 2013 RocketTheme, LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>3.2</version>
+    <description>MOD_ROKBRIDGE_LOGIN_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_rokbridge_login">mod_rokbridge_login.php</filename>
+        <folder>assets</folder>
+        <filename>index.html</filename>
+        <filename>en-GB.mod_rokbridge_login.sys.ini</filename>
+        <folder>tmpl</folder>
+        <filename>en-GB.mod_rokbridge_login.ini</filename>
+        <filename>helper.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_rokbridge_login.ini</language>
+        <language tag="en-GB">en-GB.mod_rokbridge_login.sys.ini</language>
+    </languages>
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_ROKBRIDGE_LOGIN"/>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field cols="30" description="MOD_ROKBRIDGE_LOGIN_FIELD_PRE_TEXT_DESC" filter="safehtml" label="MOD_ROKBRIDGE_LOGIN_FIELD_PRE_TEXT_LABEL" name="pretext" rows="5" type="textarea"/>
+                <field description="MOD_ROKBRIDGE_LOGIN_FIELD_LOGIN_REDIRECTURL_DESC" disable="separator" label="MOD_ROKBRIDGE_LOGIN_FIELD_LOGIN_REDIRECTURL_LABEL" name="login" type="menuitem">
+                    <option value="">JDEFAULT
+                    </option>
+                </field>
+                <field description="MOD_ROKBRIDGE_LOGIN_FIELD_LOGOUT_REDIRECTURL_DESC" disable="separator" label="MOD_ROKBRIDGE_LOGIN_FIELD_LOGOUT_REDIRECTURL_LABEL" name="logout" type="menuitem">
+                    <option value="">JDEFAULT
+                    </option>
+                </field>
+                <field default="1" description="MOD_ROKBRIDGE_LOGIN_FIELD_GREETING_DESC" label="MOD_ROKBRIDGE_LOGIN_FIELD_GREETING_LABEL" name="greeting" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="0" description="Automatically Remember login credentials" label="Auto Remember" name="autoremember" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="0" description="MOD_ROKBRIDGE_LOGIN_FIELD_NAME_DESC" label="MOD_ROKBRIDGE_LOGIN_FIELD_NAME_LABEL" name="name" type="list">
+                    <option value="0">MOD_ROKBRIDGE_LOGIN_VALUE_NAME
+                    </option>
+                    <option value="1">MOD_ROKBRIDGE_LOGIN_VALUE_USERNAME
+                    </option>
+                </field>
+                <field default="0" description="MOD_ROKBRIDGE_LOGIN_FIELD_USESECURE_DESC" label="MOD_ROKBRIDGE_LOGIN_FIELD_USESECURE_LABEL" name="usesecure" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+
+                <field default="1" label="MOD_ROKBRIDGE_SHOW_AVT" name="avatar" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="55" label="MOD_ROKBRIDGE_SHOW_AVT_SZ_PX" name="avatar_size" size="3" type="text"/>
+                <field default="1" label="MOD_ROKBRIDGE_SHOW_AVT_DEFAULT" name="show_default_avatar" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="modules/mod_rokbridge_login/assets/default-avatar.png" description="MOD_ROKBRIDGE_NO_AVT_DEF" label="MOD_ROKBRIDGE_SHOW_AVT_DEF" name="default_avatar" size="50" type="text"/>
+
+                <field default="1" label="MOD_ROKBRIDGE_SHOW_MESS_LNK" name="messages" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="1" label="MOD_ROKBRIDGE_SHOW_LASTVISIT" name="lastvisit" type="radio">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+                <field default="1" label="MOD_ROKBRIDGE_SHOW_UNANSW_POSTS" name="unanswered" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="1" label="MOD_ROKBRIDGE_SHOW_NEW_POSTS" name="new" type="radio">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+
+                <field default="1" label="MOD_ROKBRIDGE_SHOW_ACTIVE_POSTS" name="active" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+                <field default="1" label="MOD_ROKBRIDGE_SHOW_YOUR_POSTS" name="yours" type="radio">
+                    <option value="0">JNo
+                    </option>
+                    <option value="1">JYes
+                    </option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" name="moduleclass_sfx" type="text"/>
+
+                <field default="1" description="COM_MODULES_FIELD_CACHING_DESC" label="COM_MODULES_FIELD_CACHING_LABEL" name="cache" type="list">
+                    <option value="1">JGLOBAL_USE_GLOBAL
+                    </option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+                    </option>
+                </field>
+
+                <field default="900" description="COM_MODULES_FIELD_CACHE_TIME_DESC" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" name="cache_time" type="text"/>
+                <field default="static" name="cachemode" type="hidden">
+                    <option value="static"/>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
